@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Networking/Utilities
 Source0:	ftp://ftp.gncz.cz/pub/linux/hunt/%{name}-%{version}.tgz
+# Source0-md5:	5a8886784d1668a8518d5562bfd01ae7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
