@@ -5,6 +5,7 @@ Version:	1.5
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
+Group(de):	Netzwerkwesen/Werkzeuge
 Group(pl):	Sieciowe/Narzêdzia
 Source0:	ftp://ftp.gncz.cz/pub/linux/hunt/%{name}-%{version}.tgz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -21,7 +22,7 @@ po³±czeñ sieciowych.
 %setup -q
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS -Wall -D_REENTRANT"
+%{__make} CFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g} -Wall -D_REENTRANT"
 
 %install
 rm -rf $RPM_BUILD_ROOT
