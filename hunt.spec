@@ -22,7 +22,7 @@ po³±czeñ sieciowych.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} -Wall -D_REENTRANT"
+%{__make} CFLAGS="%{rpmcflags} -Wall -D_REENTRANT"
 
 %install
 rm -rf $RPM_BUILD_ROOT
