@@ -29,8 +29,6 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install man/hunt.1 $RPM_BUILD_ROOT%{_mandir}/man1
 install hunt $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf README*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
