@@ -2,7 +2,7 @@ Summary:	Connection intruder
 Summary(pl):	Przechwytywasz/sniffer po³±czeñ
 Name:		hunt
 Version:	1.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Utilities
 Source0:	ftp://ftp.gncz.cz/pub/linux/hunt/%{name}-%{version}.tgz
