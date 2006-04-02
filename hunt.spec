@@ -3,7 +3,7 @@ Summary(pl):	Przechwytywasz/sniffer po³±czeñ
 Name:		hunt
 Version:	1.5
 Release:	2
-License:	GPL
+License:	GPL v2
 Group:		Networking/Utilities
 Source0:	ftp://ftp.gncz.cz/pub/linux/hunt/%{name}-%{version}.tgz
 # Source0-md5:	5a8886784d1668a8518d5562bfd01ae7
@@ -21,7 +21,9 @@ po³±czeñ sieciowych.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{rpmcflags} -Wall -D_REENTRANT"
+%{__make} \
+	CFLAGS="%{rpmcflags} -Wall -D_REENTRANT" \
+	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -35,6 +37,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README*
+%doc CHANGES README* TODO
 %attr(755,root,root) %{_bindir}/hunt
 %{_mandir}/man1/*
