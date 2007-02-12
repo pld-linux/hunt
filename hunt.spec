@@ -1,5 +1,5 @@
 Summary:	Connection intruder
-Summary(pl):	Przechwytywasz/sniffer po³±czeñ
+Summary(pl.UTF-8):   Przechwytywasz/sniffer poÅ‚Ä…czeÅ„
 Name:		hunt
 Version:	1.5
 Release:	2
@@ -13,9 +13,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Hunt is a program for intruding into a connection, watching it and
 resetting it.
 
-%description -l pl
-Hunt to program do przechwytywania, podgl±dania oraz przerywania
-po³±czeñ sieciowych.
+%description -l pl.UTF-8
+Hunt to program do przechwytywania, podglÄ…dania oraz przerywania
+poÅ‚Ä…czeÅ„ sieciowych.
 
 %prep
 %setup -q
