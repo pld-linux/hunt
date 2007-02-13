@@ -1,5 +1,5 @@
 Summary:	Connection intruder
-Summary(pl.UTF-8):   Przechwytywasz/sniffer połączeń
+Summary(pl.UTF-8):	Przechwytywasz/sniffer połączeń
 Name:		hunt
 Version:	1.5
 Release:	2
